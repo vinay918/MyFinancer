@@ -6,7 +6,9 @@ The website is temporarily hosted at: http://vinays.sgedu.site/
 
 Update: I have completed designing the header, and login systems. Right now, after the user logs in or registers, the information that is collected is displayed to the user for testing purposes. 
 
-To Do:
+NOTE THAT THIS REPOSITORY WILL BE MAINTAINED AS A WEB APP TEMPLATE IN ITS CURRENT WORKING FORM WITH COMPLETE LOGIN FUNCTIONALITY.
+
+To Do (down the road and will show up on another repository, utilizing this template):
 1. Design database and make connection.
 2. Add meaningful and thorough documentation to code.
 3. Design UML to model problem.
