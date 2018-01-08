@@ -4,7 +4,7 @@
 
 	session_start();
 
-	$link = mysqli_connect("localhost","vinays62","TErminator918!","vinays62_myfinancer");
+	$link = mysqli_connect("localhost","USER","PASSWORD","DATABASE NAME");
 	
 	if(mysqli_connect_errno()){
 		print_r(mysqli_connect_error());
