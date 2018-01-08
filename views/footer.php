@@ -19,6 +19,7 @@
 			</button>
 		  </div>
 		  <div class="modal-body">
+			<div class="alert alert-danger" id="loginAlert"></div>
 			<form>
 			  <div class="form-group">
 				<label for="email">Email address</label>
@@ -74,7 +75,11 @@
 				url:"actions.php?action=loginSignup",
 				data: "email="+$("#email").val() + "&password="+$("#password").val()+"&loginActive="+$("#loginActive").val()+"&budget="+$("#budg").val(),
 				success: function(result){
-					alert(result);
+					if(result=="1"){
+						window.location.assign("http://vinays.sgedu.site/diary.php");
+					}else{
+						$("#loginAlert").html(result).show();
+					}
 				}
 			})
 		

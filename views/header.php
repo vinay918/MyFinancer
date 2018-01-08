@@ -9,17 +9,48 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="customCss/mystyles.css" rel="stylesheet">
+	
 
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	
+	<link href="customCss/mystyles.css" rel="stylesheet">
+	
 	<style>
-	.navbar a {
-    color: white;
+	#loginAlert {
+		display:none;
 	}
+	
+	body { 
+	padding-top: 70px; 
+	}
+
+	.navbar a {
+		color: white;
+	}
+
+	.hoverer:hover { 
+		background-color: yellow;
+	}
+
+	#toggleLogin {
+		padding-right: 20px;
+	}
+
+	#myDivver {
+		text-align: center;
+		background-color:white;
+	}
+
+	.resize_fit_center {
+		vertical-align: middle;
+		max-width:100%;
+		max-height:100%;
+	}	
 	</style>
+
   </head>
   <body>
   
@@ -44,7 +75,11 @@
             </li>				
           </ul>
 		  <div class="form-inline pull-xs-right">
+			<?php if ($_SESSION['id']){ ?>
+				<a class="btn btn-success-outline" href="?function=logout" >Logout</a>
+			<?php } else{ ?>
 			<button class="btn btn-success-outline" data-toggle="modal" data-target="#myModal" >Login/Sign Up</Button>
+			<?php } ?>
 		  </div>
         </div>
       </div>
